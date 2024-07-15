@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Aprendizaje en Línea</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Contenedores.css">
+    <link rel="stylesheet" href="Btnscroll.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo"><img src="Imagenes/Logo_Tutor-connect-Logo.png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Cursos1.html"> Cursos</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#calendar">Calendario</a></li>
+                <li><a href="Comunidad.html">Comunidad</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Bienvenido a Tutor-connect</h1>
+            <p>La mejor plataforma de aprendizaje en línea</p>
+            <a href="#courses" class="btn">Explorar Cursos</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="dashboard">
+                <h2>Mi Dashboard</h2>
+                <div class="dashboard-table">
+                    <div class="dashboard-row header">
+                        <div class="dashboard-cell">Nombre del Curso</div>
+                        <div class="dashboard-cell">Progreso</div>
+                        <div class="dashboard-cell">Completado</div>
+                    </div>
+                    <div class="dashboard-row">
+                        <div class="dashboard-cell">Curso 1</div>
+                        <div class="dashboard-cell">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-cell">80% Completado</div>
+                    </div>
+                    <div class="dashboard-row">
+                        <div class="dashboard-cell">Curso 2</div>
+                        <div class="dashboard-cell">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-cell">50% Completado</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" onclick="window.location.href='dashboard.html'">Ver más a detalle</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="courses" class="section">
+                <section class="courses-section">
+                    <h2>Cursos Destacados</h2>
+                    <div class="courses-container">
+                        <div class="course-card">
+                            <img src="Imagenes/CursoMatematicas2.jpg" alt="Curso de Matemáticas">
+                            <div class="content">
+                                <h3>Curso de Matemáticas</h3>
+                                <p>Aprende y domina las operaciones aritméticas con nuestro curso interactivo.</p>
+                                <a href="Cursos1.html">Ver Curso</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="Imagenes/Curso-Pintura1.jpg" alt="Curso de Ciencias">
+                            <div class="content">
+                                <h3>Curso de Pintura</h3>
+                                <p>Pinta compo bob ross!!!, Descubre los secretos de los colores con nuestro curso de Pintura completo.</p>
+                                <a href="Cursos1.html">Ver Curso</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="Imagenes/Curso-Cocina1.jpg" alt="Curso de Curso-Cocina1">
+                            <div class="content">
+                                <h3>Curso de Cocina</h3>
+                                <p>Mejora tu nivel de Cocina con nuestras lecciones diseñadas para todos los niveles.</p>
+                                <a href="Cursos1.html">Ver Curso</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="calendar" class="section">
+            <div class="container">
+                <h2>Calendario</h2>
+                <!-- Contenido del calendario -->
+            </div>
+        </section>
+        <br>
+        <section id="community" class="section">
+            <div class="container">
+                <h3>Comunidad</h3>
+                <p>Únete ya a nuestra comunidad y participa en discusiones, comparte experiencias y más.</p>
+                <button class="btn">Únete</button>
+            </div>
+        </section>
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Volver arriba">
+            <img src="Imagenes/subir.png" alt="Arrow Up Icon">
+        </button>
+    </main>        
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2024 Tutor-connect. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="Index.js"></script>
+    <script src="BarraBusq.js"></script>
+    <script src="BtnScroll.js"></script>
+</body>
+</html>

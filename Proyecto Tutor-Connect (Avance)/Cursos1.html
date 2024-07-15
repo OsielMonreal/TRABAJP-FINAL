@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion de Cursos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Cursos1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="Index.css">-->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Index.html" class="logo"><img src="Imagenes/Logo_Tutor-connect-Logo.png" alt="Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Cursos.html"> Cursos</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#calendar">Calendario</a></li>
+                    <li><a href="Comunidad.html">Comunidad</a></li>
+                </ul>
+                <div class="nav-extras">
+                    <div class="search-container">
+                        <input type="text" id="buscador" placeholder="Buscar cursos..." oninput="filtrarProductos()">
+                        <button type="submit">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--<div class="buscador-container">
+        <input type="text" id="buscador" placeholder="Buscar producto por nombre..." oninput="filtrarProductos()">
+    </div>-->
+    <section id="courses" class="section">
+        <section class="courses-section">
+            <h2>Cursos Disponibles</h2>
+            <div class="courses-container">
+                <div class="course-card">
+                    <div id="courses-container">
+                        <div class="productos" id="productos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <button class="boton-carro" id="botonCarro">
+        <i class="fas fa-shopping-cart"></i> Carro
+    </button>
+    <div class="carro" id="carro">
+        <div class="carro-header">
+            <h2>Carrito de Compras</h2>
+            <button id="cerrarCarro"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="itemsCarro">
+            <!-- Items del carro -->
+        </div>
+        <div id="totalCarro">
+            <!-- Total del carrito -->
+        </div>
+    </nav>
+    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2024 Tutor-connect. Todos los derechos reservados.</p>
+        </div>
+    <script src="Secciondecursos.js"></script>
+    <script src="Cursos1.js"></script>
+</body>
+</html>

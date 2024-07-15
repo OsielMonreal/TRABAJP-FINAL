@@ -1,0 +1,302 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1d2542, #3a3a4b); /* Cambia los colores según tus preferencias */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #111;
+}
+
+.navbar .container {
+    display: flex;
+    margin-left: 15px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Ajusta el ancho máximo según tu preferencia */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 15px; /* Añade un padding para evitar que el contenido toque los bordes */
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width:60px;
+    height:60px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background: #555;
+    color: #fff;
+    left: 35px;
+}
+
+.nav-extras {
+    display:flex;
+    gap: 1rem;
+    left: 50%;
+}
+
+.nav-extras input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.nav-extras input:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.nav-extras button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #3f2222;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-left: 270px;
+    padding: 45px;
+    flex-grow: 1;
+    right: 25px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 55px;
+    background: url('Imagenes/Comunidad3.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #f7f7f7;
+    position: fixed;
+    top: 84px;
+    bottom: 0;
+    left: 5px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-links li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .sidebar-links li a:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para el contenido principal */
+.main-content1 {
+    margin-left: 270px;
+    padding: 45px;
+    flex-grow: 1;
+    right: 25px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.offer-courses, .exchange-courses {
+    margin-bottom: 40px;
+}
+
+.course-grid, .exchange-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card, .exchange-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover, .exchange-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3, .exchange-card h3 {
+    margin-top: 0;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Estilos para botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #495057;
+}
+
+.btn-primary {
+    background-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(34,34,34,1) 0%, rgba(16,16,16,1) 50%, rgba(34,34,34,1) 100%);
+    z-index: -1;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tutor-connect</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="Index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="Btnscroll.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo"><img src="Imagenes/Logo_Tutor-connect-Logo.png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Cursos1.html">Cursos</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#calendar">Calendario</a></li>
+                <li><a href="Comunidad.html">Comunidad</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile">
+                <img src="Imagenes/User.png" alt="Avatar" class="avatar">
+                <h3>Usuario</h3>
+                <p>usuario@ejemplo.com</p>
+            </div>
+            <ul class="sidebar-links">
+                <li><a href="#profile" onclick="toggleSection('profile-section')">Perfil</a></li>
+                <li><a href="#courses" onclick="toggleSection('courses-section')">Mis Cursos</a></li>
+                <li><a href="#assignments" onclick="toggleSection('assignments-section')">Asignaciones</a></li>
+                <li><a href="#grades" onclick="toggleSection('grades-section')">Calificaciones</a></li>
+                <li><a href="#messages" onclick="toggleSection('messages-section')">Mensajes</a></li>
+                <li><a href="#settings" onclick="toggleSection('settings-section')">Configuración</a></li>
+                <li><a href="#logout">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main-content">
+        <section id="profile-section" class="section hidden">
+            <h2>Perfil</h2>
+            <div class="profile-info">
+                <img src="Imagenes/User.png" alt="Avatar" class="avatar">
+                <h3>Nombre del Usuario</h3>
+                <p>Correo Electrónico: usuario@ejemplo.com</p>
+                <p>Edad: 30 años</p>
+                <!-- Agrega más información del perfil según sea necesario -->
+            </div>
+        </section>
+        <section id="courses-section" class="section hidden">
+            <h2>Mis Cursos</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Curso de Desarrollo Web</h3>
+                    <p>Progreso: 80%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="course">
+                    <h3>Curso de Programación Avanzada</h3>
+                    <p>Progreso: 50%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <!-- Agrega más cursos según sea necesario -->
+            </div>
+        </section>
+        <section id="assignments-section" class="section hidden">
+            <h2>Asignaciones</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    <h3>Tarea de Programación</h3>
+                    <p>Fecha de entrega: 15 de julio de 2024</p>
+                    <p>Estado: Pendiente</p>
+                </div>
+                <div class="assignment">
+                    <h3>Proyecto Final de Diseño Gráfico</h3>
+                    <p>Fecha de entrega: 30 de julio de 2024</p>
+                    <p>Estado: En Progreso</p>
+                </div>
+                <!-- Agrega más asignaciones según sea necesario -->
+            </div>
+        </section>
+        <section id="grades-section" class="section hidden">
+            <h2>Calificaciones</h2>
+            <div class="grades">
+                <div class="grade">
+                    <h3>Desarrollo Web</h3>
+                    <p>Calificación: A</p>
+                </div>
+                <div class="grade">
+                    <h3>Programación Avanzada</h3>
+                    <p>Calificación: B+</p>
+                </div>
+                <!-- Agrega más calificaciones según sea necesario -->
+            </div>
+        </section>
+        <section id="messages-section" class="section hidden">
+            <h2>Mensajes</h2>
+            <div class="messages">
+                <div class="message">
+                    <h3>Mensaje de Bienvenida</h3>
+                    <p>Bienvenido al dashboard de Tutor-connect.</p>
+                </div>
+                <!-- Agrega más mensajes según sea necesario -->
+            </div>
+        </section>
+        <section id="settings-section" class="section hidden">
+            <h2>Configuración</h2>
+            <div class="settings">
+                <h3>Ajustes de Cuenta</h3>
+                <p>Configura tus preferencias de cuenta aquí.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2024 Tutor-connect. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.classList.toggle('hidden');
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+    <script src="dashboard.js"></script>
+    <script src="BtnScroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Estilo del navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.login-signup {
+    display: flex;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: #f57c00;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para la barra de búsqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 20px; /* Espacio entre la barra de búsqueda y otros elementos */
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Ancho deseado para la barra de búsqueda */
+    transition: width 0.3s ease-in-out; /* Animación de transición para cambios de ancho */
+}
+
+.search-container input[type=text]:focus {
+    width: 400px; /* Ancho expandido al enfocar */
+}
+
+.search-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background-color: #007BFF; /* Color de fondo del botón */
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Esquinas redondeadas */
+}
+
+.search-container button img {
+    width: 20px; /* Tamaño de la imagen del icono de búsqueda */
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+/* Ajuste para evitar que la navbar tape el contenido */
+header {
+    padding-top: 70px; /* Ajusta según la altura de tu navbar */
+}
+
+main {
+    margin-top: 70px; /* Ajusta según la altura de tu navbar */
+}
+
+/* Estilo para el contenido principal */
+.hero {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+

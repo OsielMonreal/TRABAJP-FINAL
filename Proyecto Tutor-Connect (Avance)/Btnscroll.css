@@ -1,0 +1,25 @@
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color: #173658;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn img {
+    width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #273544;
+    transform: scale(1.1);
+}

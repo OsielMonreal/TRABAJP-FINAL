@@ -1,0 +1,188 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente todo el contenido */
+    min-height: 100vh; /* Altura mínima para cubrir toda la ventana */
+    transition: background-color 0.3s ease; /* Animación para cambios de color de fondo */
+}
+
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+
+
+.sidebar {
+    width: 250px;
+    background-color: #f7f7f7;
+    position: fixed;
+    top: 103px;
+    bottom: 0;
+    left: 5px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Animación para cambios de sombra */
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor sobre la tarjeta */
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px; /* Espacio superior entre tarjetas */
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease; /* Animaciones para el ancho y color de la barra de progreso */
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile h3 {
+    margin: 0;
+}
+
+.sidebar .sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-links li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .sidebar-links li a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 45px;
+    flex-grow: 1;
+    right: 25px;
+}
+
+.section {
+    display: none;
+}
+
+.section.hidden {
+    display: none;
+}
+
+.section:not(.hidden) {
+    display: block;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: transform 0.3s ease; /* Animación para cambios de transformación */
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* Hace que la imagen se agrande ligeramente al pasar el cursor sobre ella */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+} 
+
